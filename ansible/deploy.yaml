@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Deploy application to Kubernetes
+      command: kubectl apply -f /home/aniporwal/DhairyaAnsible/k8s/deployment.yaml
+    - name: Expose service
+      command: kubectl apply -f /home/aniporwal/DhairyaAnsible/k8s/service.yaml
+
